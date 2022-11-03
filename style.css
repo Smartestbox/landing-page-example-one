@@ -16,60 +16,114 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    gap: 100px;
 }
 
 header {
     height: 7vh;
     display: flex;
     justify-content: center;
+    background-color: #015045;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
     width: 70%;
 }
 
-.logo {
-
+.logo a{
+    font-size: 24px;
+    color: #F9FAF8;
 }
 
-.navbar ul {
+.nav-links ul{
     display: flex;
     gap: 20px;
+}
+
+.nav-links ul a {
+    font-size: 18px;
+    padding: 5px;
+    border: 1px solid #F9FAF8;
+    border-radius: 5px;
+    color: #E5E7EB;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.nav-links ul a:hover {
+    background-color: #F9FAF8;
+    color: #015045;
 }
 
 .hero-section {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 100px 0;
+    background-color: #015045;
 }
 
 .hero-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px;
-    width: 70vw;
+    gap: 10px;
+    width: 70%;
 }
 
 .hero-title {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-height: 270px;
+    min-width: 481px;
+    max-width: 490px;
 }
 
-.hero-section img {
-    width: 30vw;
+.hero-title h1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #F9FAF8;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.hero-title p {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.store-btn {
+    font-size: 48px;
+    color: #F9FAF8;
+    border: 1px solid #F9FAF8;
+    border-radius: 5px;
+    padding: 10px 40px;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.store-btn:hover {
+    background-color: #F9FAF8;
+    color: #015045;
+}
+
+.hero-img-container {
+
+}
+
+.hero-img-container img {
+    height: 270px;
 }
 
 main {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 30px 0 50px 0;
+    background-color: #F9FAF8;
+    color: #015045;
 }
 
 .main-container {
@@ -81,6 +135,11 @@ main {
     width: 50%;
 }
 
+.main-title {
+    font-size: 36px;
+    font-weight: 900;
+}
+
 .info-cards {
     display: flex;
     justify-content: center;
@@ -90,29 +149,37 @@ main {
 
 .card {
     width: 200px;
-    height: 300px;
+    height: 400px;
 }
 
 .card img {
     width: 200px;
     height: 200px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .card p {
     text-align: center;
+    font-size: 24px;
 }
 
-.testimonial-section {
+.quote-section {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #015045;
 }
 
-.testimonial-container {
+.quote-container {
     display: flex;
     flex-direction: column;
+    gap: 20px;
     width: 50%;
+    padding: 80px 0 50px 0;
+    font-size: 36px;
+    font-style: italic;
+    color: #F9FAF8;
 }
 
 .quote-author {
@@ -123,18 +190,51 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 400px;
 }
 
 .call-to-action-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 100px;
-    width: 50%;
+    gap: 10px;
+    min-width: 783px;
+    width: 60%;
+    padding: 40px 80px;
+    background-color: #015045;
+    color: #F9FAF8;
+    border-radius: 5px;
+}
+
+.action-call {
+    font-size: 24px;
+}
+
+.action-title {
+    min-width: 449px;
+}
+
+.action-title p {
+    font-size: 18px;
+    padding-top: 10px;
 }
 
 .sign-up-btn {
-    align-self: flex-end;
+    align-self: center;
+    min-width: 162px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #F9FAF8;
+    background-color: #015045;
+    border: 1px solid #F9FAF8;
+    border-radius: 5px;
+    padding: 10px 40px;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.sign-up-btn:hover {
+    background-color: #F9FAF8;
+    color: #015045;
 }
 
 footer {
@@ -142,6 +242,8 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 30px 0;
+    background-color: #015045;
+    color: #E5E7EB;
 }
 
 ul {
@@ -150,5 +252,4 @@ ul {
 
 a {
     text-decoration: none;
-    color: black;
 }
