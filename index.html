@@ -1,86 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Landing Page</title>
-</head>
-<body>
-    <header>
-        <div class="logo">
-            WildLife Logo
-        </div>
-        <div class="navbar">
-            <ul>
-                <li><a href="#">Online store</a></li>
-                <li><a href="#">Contacts</a></li>
-                <li><a href="#">Guide to survive</a></li>
-            </ul>
-        </div>
-    </header>
-    <div class="hero-section">
-        <h1>
-            Travel by yourself with more confidence!
-        </h1>
-        <p>
-            We have all products you need to feel comfort and safe in the wild.
-        </p>
-        <button class="store-btn">To the Store</button>
-        <img src="#" alt="">
-    </div>
-    
-    <main>
-        <h1 class="main-title">
-            Basic equipment
-        </h1>
-        <div class="info-cards">
-            <div class="card">
-                <img src="#" alt="">
-                <p>some subtext to describe under the image</p>
-            </div>
-            <div class="card">
-                <img src="#" alt="">
-                <p>some subtext to describe under the image</p>
-            </div>
-            <div class="card">
-                <img src="#" alt="">
-                <p>some subtext to describe under the image</p>
-            </div>
-            <div class="card">
-                <img src="#" alt="">
-                <p>some subtext to describe under the image</p>
-            </div>
-        </div>
-    </main>
-    
-    <div class="testimonial">
-        <p>
-            Some inspiring qoute from random author
-        </p>
-        <p>
-            Author's name
-        </p>
-    </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Landing Page</title>
+	</head>
+	<body>
+		<header>
+			<div class="navbar">
+				<div class="logo">
+					<a href="#">WILD HOME</a>
+				</div>
+				<div class="nav-links">
+					<ul>
+						<li><a href="#">Online store</a></li>
+						<li><a href="#">Guide to survive</a></li>
+						<li><a href="#">Contacts</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
 
-    <div class="call-to-action">
-        <div>
-            <div class="title-action">
-                
-            </div>
-            <p>
-                Explore our latest offers
-            </p>
-            <button class="store-btn">
-                To the Store
-            </button>
-        </div>
-    </div>
+		<div class="hero-section">
+			<div class="hero-container">
+				<div class="hero-title">
+					<h1>Travel by yourself with more confidence!</h1>
+					<p>
+						We have all products you need to feel comfort and safe in the wild
+						like at home.
+					</p>
+					<a class="store-btn" href="">Store</a>
+				</div>
+				<img class="hero-img" src="./images/hero.jpg" alt="" />
+			</div>
+		</div>
 
-    <footer>
-        Copyright &#169 My project 2022
-    </footer>
+		<main>
+			<div class="main-container">
+				<div class="main-title">
+					<h1 class="main-title">Basic equipment</h1>
+				</div>
 
-</body>
+				<div class="info-cards">
+					<div class="card">
+						<img
+							src="./images/camping-tents.jpg"
+							alt="basic-equipment-example"
+						/>
+						<p>Tents are the second home if you want to travel without a car</p>
+					</div>
+					<div class="card">
+						<img src="./images/axe.jpg" alt="basic-equipment-example" />
+						<p>
+							Instruments like axe or shovel can help you to make campfire or
+							put up a tent
+						</p>
+					</div>
+					<div class="card">
+						<img src="./images/eat-help.jpg" alt="basic-equipment-example" />
+						<p>It is always nice to eat something fresh and warm</p>
+					</div>
+					<div class="card">
+						<img src="./images/hiking-wear.jpg" alt="basic-equipment-example" />
+						<p>Special hiking comfortable wear</p>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<div class="testimonial-section">
+			<div class="testimonial-container">
+				<p>
+					It's not an easy journey, to get to a place where you forgive people.
+					But it is such a powerful place, because it frees you.
+				</p>
+				<p class="quote-author">Tyler Perry</p>
+			</div>
+		</div>
+
+		<div class="call-to-action-section">
+			<div class="call-to-action-container">
+				<div class="action-title">
+					<div class="action-call">
+						Sign up now and explore our latest products
+					</div>
+					<p>First shipping is FREE for our new costumers!</p>
+				</div>
+				<button class="sign-up-btn">Sign Up</button>
+			</div>
+		</div>
+
+		<footer>Copyright &#169 My project 2022</footer>
+	</body>
 </html>
